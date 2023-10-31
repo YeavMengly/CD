@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">CD</string>
+
+    //bottom navigation
+    <string name="home">Home</string>
+    <string name="product">Product</string>
+    <string name="setting">Setting</string>
 </resources>
