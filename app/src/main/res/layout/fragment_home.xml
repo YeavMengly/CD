@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -15,14 +16,15 @@
         android:layout_height="60dp"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_margin="16dp"
+        android:padding="16dp"
         android:layout_gravity="center"
-
         >
-        <ImageView
-            android:layout_width="80dp"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="60dp"
-            android:src=""
+            android:text="@string/title"
+            android:textSize="18dp"
+            android:textStyle="bold"
             />
 
         <ImageView
@@ -33,21 +35,22 @@
             android:layout_alignParentRight="true"
             android:layout_centerInParent="true"
             />
-
     </RelativeLayout>
-
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/banner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="vertical"
         android:layout_gravity="center">
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/viewPager"
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/image_slider"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
-            tools:ignore="MissingConstraints"
-            />
-    </RelativeLayout>
+            android:layout_height="250dp"
+            app:iss_auto_cycle="true"
+            app:iss_period="1000"
+            app:iss_delay="1000"
+            app:iss_text_align="CENTER"/>
+    </LinearLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,25 +60,30 @@
                 android:layout_height="wrap_content"
                 android:text="Accessories"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
                 android:textStyle="bold"
+                android:textColor="@color/black"
                 android:textSize="18dp"/>
         </RelativeLayout>
-
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scrollbars="none"
             >
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycleView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+            <LinearLayout
+                android:padding="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="16dp" />
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="16dp" />
+            </LinearLayout>
+
         </HorizontalScrollView>
-
-
     </LinearLayout>
-
 </FrameLayout>

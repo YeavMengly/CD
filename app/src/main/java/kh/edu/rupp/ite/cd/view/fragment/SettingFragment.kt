@@ -1,4 +1,4 @@
-package kh.edu.rupp.ite.cd.ui.fragment
+package kh.edu.rupp.ite.cd.view.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
