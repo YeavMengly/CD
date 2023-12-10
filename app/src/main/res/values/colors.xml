@@ -7,4 +7,14 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="bg_card">#c9c4c3</color>
+
+    //bg loading
+    <color name="bg_load" >#293241</color>
+
+    //bg cart
+    <color name="bg_cart">#c7d4d6</color>
+
+    //btn
+    <color name="bg_btn">#2fbdd6</color>
 </resources>

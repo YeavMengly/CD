@@ -1,13 +1,18 @@
-package kh.edu.rupp.ite.cd.ui.activity
+package kh.edu.rupp.ite.cd.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import androidx.fragment.app.Fragment
+import com.denzcoskun.imageslider.ImageSlider
+import com.denzcoskun.imageslider.constants.AnimationTypes
+import com.denzcoskun.imageslider.constants.ScaleTypes
+import com.denzcoskun.imageslider.models.SlideModel
 import kh.edu.rupp.ite.cd.R
 import kh.edu.rupp.ite.cd.databinding.ActivityMainBinding
-import kh.edu.rupp.ite.cd.ui.fragment.HomeFragment
-import kh.edu.rupp.ite.cd.ui.fragment.ProductFragment
-import kh.edu.rupp.ite.cd.ui.fragment.SettingFragment
+import kh.edu.rupp.ite.cd.view.fragment.HomeFragment
+import kh.edu.rupp.ite.cd.view.fragment.ProductFragment
+import kh.edu.rupp.ite.cd.view.fragment.SettingFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -42,5 +47,7 @@ class MainActivity : AppCompatActivity() {
         //Commit Fragment
         fragmentTransition.commit()
     }
+
+
 
 }
