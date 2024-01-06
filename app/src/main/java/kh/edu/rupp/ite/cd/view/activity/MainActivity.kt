@@ -47,7 +47,4 @@ class MainActivity : AppCompatActivity() {
         //Commit Fragment
         fragmentTransition.commit()
     }
-
-
-
 }

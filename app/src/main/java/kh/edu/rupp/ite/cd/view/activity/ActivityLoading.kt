@@ -18,7 +18,7 @@ class ActivityLoading:AppCompatActivity() {
 
 
         Handler().postDelayed(Runnable {
-            val i = Intent(this,MainActivity::class.java)
+            val i = Intent(this,LoginActivity::class.java)
             startActivity(i)
             finish()
         },2000)

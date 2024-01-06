@@ -22,8 +22,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--        Add activity to Manifest         -->
+
         <activity android:name=".view.activity.MainActivity"/>
+        <activity android:name=".view.activity.LoginActivity"/>
+        <activity android:name=".view.activity.SignInActivity"/>
         <activity android:name=".view.activity.SearchActivity"/>
+        <activity android:name=".view.fragment.SettingFragment"/>
+        <!--        End add activity to Manifest        -->
     </application>
 
 </manifest>
