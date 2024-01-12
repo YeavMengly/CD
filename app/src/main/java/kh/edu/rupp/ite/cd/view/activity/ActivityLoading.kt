@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import kh.edu.rupp.ite.cd.databinding.ActivityLoadingBinding
 
 class ActivityLoading:AppCompatActivity() {
+
     private lateinit var binding: ActivityLoadingBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,7 +16,6 @@ class ActivityLoading:AppCompatActivity() {
 
         binding = ActivityLoadingBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
 
         Handler().postDelayed(Runnable {
             val i = Intent(this,LoginActivity::class.java)

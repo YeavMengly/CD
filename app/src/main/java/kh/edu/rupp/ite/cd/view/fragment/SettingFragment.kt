@@ -12,10 +12,12 @@ import androidx.fragment.app.Fragment
 import com.google.firebase.auth.FirebaseAuth
 import kh.edu.rupp.ite.cd.databinding.FragmentHomeBinding
 import kh.edu.rupp.ite.cd.databinding.FragmentSettingBinding
+import kh.edu.rupp.ite.cd.view.activity.ActivityLoading
 import kh.edu.rupp.ite.cd.view.activity.LoginActivity
 
 class SettingFragment: Fragment() {
 
+    // Declare data members
     private lateinit var binding: FragmentSettingBinding
     private lateinit var auth : FirebaseAuth
 
@@ -33,7 +35,6 @@ class SettingFragment: Fragment() {
 
         // Handle click logOut
         logoutGo.setOnClickListener {
-
             // Call function logOutUser
             logOutUser()
         }
@@ -44,7 +45,8 @@ class SettingFragment: Fragment() {
         auth.signOut()
 
         // Create intent
-        val intent = Intent(context, LoginActivity::class.java)
+        val intent = Intent(context, ActivityLoading::class.java)
         startActivity(intent)
+        requireActivity().finish()
     }
 }

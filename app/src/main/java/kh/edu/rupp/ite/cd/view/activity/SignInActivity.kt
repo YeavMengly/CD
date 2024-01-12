@@ -15,7 +15,6 @@ import kh.edu.rupp.ite.cd.databinding.ActivitySigninBinding
 class SignInActivity:AppCompatActivity() {
 
     // Declare data members
-
     private lateinit var binding : ActivitySigninBinding
     private lateinit var auth: FirebaseAuth
 
@@ -29,6 +28,7 @@ class SignInActivity:AppCompatActivity() {
         binding.loginBtn.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
+            finish()
         }
 
         FirebaseApp.initializeApp(this)
@@ -61,6 +61,7 @@ class SignInActivity:AppCompatActivity() {
                     if (task.isSuccessful) {
                         // Registration successful, update user profile with the username
                         val user = auth.currentUser
+
                         val profileUpdates = UserProfileChangeRequest.Builder()
                             .setDisplayName(username.toString())
                             .build()

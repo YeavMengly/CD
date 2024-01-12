@@ -41,44 +41,19 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/user"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center"/>
             </RelativeLayout>
-            <Button
-                android:id="@+id/signin"
-                android:layout_width="match_parent"
-                android:layout_margin="30dp"
-                android:layout_height="wrap_content"
-                android:text="Sign in"
-                android:visibility="gone"
-                android:background="@drawable/btn_bg2"
-                android:textColor="#fff"/>
-            <TextView
-                android:id="@+id/userName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text=""
-                android:visibility="gone"
-                android:textColor="#031161"
-                android:textSize="17dp"
-                android:layout_marginTop="10dp"
-                android:textAlignment="center"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/userStatus"
-                android:text=""
-                android:visibility="gone"
-                android:textColor="#3814BA"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="20dp"
-                android:textAlignment="center"/>
-
-
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -96,13 +71,54 @@
             android:layout_height="match_parent">
 
             <RelativeLayout
+                android:id="@+id/myAccount"
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
-                android:id="@+id/myaccount"
                 android:background="?attr/selectableItemBackground">
 
                 <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/guser_single_image"
+                    android:id="@+id/user_single_image"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:backgroundTint="#031161"
+                    android:backgroundTintMode="add"
+                    android:src="@drawable/account4" />
+
+                <TextView
+                    android:id="@+id/user_single_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toEndOf="@+id/user_single_image"
+
+                    android:text="Account Settings"
+                    android:textColor="#031161"
+                    android:textSize="16dp" />
+
+                <View
+                    android:layout_width="290dp"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="100dp"
+                    android:background="@color/grey" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:id="@+id/language"
+                android:background="?attr/selectableItemBackground">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/icLanguage"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="24dp"
@@ -110,87 +126,34 @@
                     android:backgroundTintMode="add"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="15dp"
-                    android:src="@drawable/account4" />
-
+                    android:src="@drawable/ic_language" />
                 <TextView
-                    android:id="@+id/guser_single_name"
+                    android:id="@+id/txtLanguage"
                     android:layout_width="wrap_content"
                     android:layout_height="26dp"
                     android:layout_marginEnd="5dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginStart="30dp"
-                    android:layout_toEndOf="@+id/guser_single_image"
-                    android:text="Account Settings"
-
+                    android:layout_toEndOf="@+id/icLanguage"
+                    android:text="@string/language"
                     android:layout_centerVertical="true"
                     android:textColor="#031161"
                     android:textSize="16dp" />
-
-
                 <View
                     android:layout_width="290dp"
                     android:layout_height="1dp"
                     android:layout_marginLeft="100dp"
-
-
                     android:layout_alignParentBottom="true"
-                    android:background="#20000000" />
-
-
+                    android:background="@color/grey" />
             </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:visibility="gone"
-                android:id="@+id/mycampaign"
-                android:background="?attr/selectableItemBackground">
-
-                                <de.hdodenhof.circleimageview.CircleImageView
-                                    android:id="@+id/campaign_image"
-                                    android:layout_width="40dp"
-                                    android:layout_height="40dp"
-                                    android:layout_marginStart="24dp"
-                                    android:backgroundTint="#031161"
-                                    android:backgroundTintMode="add"
-                                    android:layout_marginTop="20dp"
-                                    android:layout_marginBottom="15dp"/>
-
-                <TextView
-                    android:id="@+id/campaign_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="26dp"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginStart="30dp"
-                    android:layout_toEndOf="@+id/campaign_image"
-                    android:text="My Campaigns"
-
-                    android:layout_centerVertical="true"
-                    android:textColor="#031161"
-                    android:textSize="16dp" />
-
-
-                <View
-                    android:layout_width="290dp"
-                    android:layout_height="1dp"
-                    android:layout_marginLeft="100dp"
-
-
-                    android:layout_alignParentBottom="true"
-                    android:background="#20000000" />
-
-
-            </RelativeLayout>
-
-
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
                 android:id="@+id/appSettings"
-                android:background="?attr/selectableItemBackground">
 
+                android:background="?attr/selectableItemBackground">
                 <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/guser_single_image3"
+                    android:id="@+id/user_single_image3"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="24dp"
@@ -199,34 +162,59 @@
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="15dp"
                     android:src="@drawable/app4" />
-
                 <TextView
-                    android:id="@+id/guser_single_name3"
+                    android:id="@+id/user_single_name3"
                     android:layout_width="wrap_content"
                     android:layout_height="26dp"
                     android:layout_marginEnd="5dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginStart="30dp"
-                    android:layout_toEndOf="@+id/guser_single_image3"
+                    android:layout_toEndOf="@+id/user_single_image3"
                     android:text="App Settings"
-
                     android:layout_centerVertical="true"
                     android:textColor="#031161"
                     android:textSize="16dp" />
-
-
                 <View
                     android:layout_width="290dp"
                     android:layout_height="1dp"
                     android:layout_marginLeft="100dp"
-
-
                     android:layout_alignParentBottom="true"
-                    android:background="#20000000" />
-
-
+                    android:background="@color/grey" />
             </RelativeLayout>
-
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:id="@+id/help"
+                android:background="?attr/selectableItemBackground">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_single_image4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="24dp"
+                    android:backgroundTint="#031161"
+                    android:backgroundTintMode="add"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/ic_help" />
+                <TextView
+                    android:id="@+id/user_single_name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_toEndOf="@+id/user_single_image4"
+                    android:text="@string/help"
+                    android:layout_centerVertical="true"
+                    android:textColor="#031161"
+                    android:textSize="16dp" />
+                <View
+                    android:layout_width="290dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/grey" />
+            </RelativeLayout>
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="65dp"
@@ -234,7 +222,7 @@
                 android:background="?attr/selectableItemBackground">
 
                 <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/guser_single_image2"
+                    android:id="@+id/user_single_image2"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="24dp"
@@ -244,24 +232,18 @@
                     android:src="@drawable/logout3" />
 
                 <TextView
-                    android:id="@+id/guser_single_name2"
+                    android:id="@+id/user_single_name2"
                     android:layout_width="wrap_content"
                     android:layout_height="26dp"
                     android:layout_marginEnd="5dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginStart="30dp"
-                    android:layout_toEndOf="@+id/guser_single_image2"
+                    android:layout_toEndOf="@+id/user_single_image2"
                     android:text="Logout"
-
                     android:layout_centerVertical="true"
                     android:textColor="#031161"
                     android:textSize="16dp" />
-
-
-
-
             </RelativeLayout>
         </LinearLayout>
-
     </androidx.cardview.widget.CardView>
 </LinearLayout>

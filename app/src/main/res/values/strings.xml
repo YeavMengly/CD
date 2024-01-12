@@ -33,5 +33,11 @@
     <string name="btn_cart">ADD TO CART</string>
     <string name="btn_buy">Buy Now</string>
 
+    <string name="acc_setting">Account Settings</string>
+    <string name="language">Language</string>
+    <string name="aoo_setting">App Settings</string>
+    <string name="help">Help</string>
+    <string name="logout">Logout</string>
+
 
 </resources>
