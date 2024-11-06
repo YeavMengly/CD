@@ -15,9 +15,6 @@ import kh.edu.rupp.ite.cd.R
 import kh.edu.rupp.ite.cd.databinding.ActivityMainBinding
 
 class ImageSliderActivity:AppCompatActivity() {
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         setContentView(R.layout.fragment_home)
         super.onCreate(savedInstanceState)
@@ -34,14 +31,10 @@ class ImageSliderActivity:AppCompatActivity() {
 
         imageSlider.setItemClickListener(object : ItemClickListener {
             override fun onItemSelected(position: Int) {
-                // You can listen here.
                 println("normal")
             }
 
             override fun doubleClick(position: Int) {
-                // Do not use onItemSelected if you are using a double click listener at the same time.
-                // Its just added for specific cases.
-                // Listen for clicks under 250 milliseconds.
                 println("its double")
             }
         })

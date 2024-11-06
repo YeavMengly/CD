@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "978189774321",
+    "project_id": "cd-project-c9a16",
+    "storage_bucket": "cd-project-c9a16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978189774321:android:f263f79d3c46ed67202850",
+        "android_client_info": {
+          "package_name": "kh.edu.rupp.ite.cd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978189774321-v8p74qa1bvs70gj3npte5ife8rc1elif.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrxgruByJdiK1qGzt-pm2fs6Q--plOj9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978189774321-v8p74qa1bvs70gj3npte5ife8rc1elif.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

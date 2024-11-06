@@ -8,6 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="bg_card">#c9c4c3</color>
+    <color name="grey">#20000000</color>
 
     //bg loading
     <color name="bg_load" >#293241</color>
@@ -16,5 +17,9 @@
     <color name="bg_cart">#c7d4d6</color>
 
     //btn
-    <color name="bg_btn">#2fbdd6</color>
+    <color name="bg_btn">#35a7db</color>
+
+    //search bg
+    <color name="searchBg">#68b1e8</color>
+
 </resources>

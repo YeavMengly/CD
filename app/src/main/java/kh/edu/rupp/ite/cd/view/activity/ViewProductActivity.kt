@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import kh.edu.rupp.ite.cd.databinding.ViewDetailProductBinding
 
 class ViewProductActivity:AppCompatActivity() {
+
+    // Declare data members
     private lateinit var binding: ViewDetailProductBinding
 
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
